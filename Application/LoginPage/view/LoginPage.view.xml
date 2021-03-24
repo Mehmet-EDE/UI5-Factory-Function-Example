@@ -1,0 +1,23 @@
+<mvc:View controllerName="SapUI5Tutorial.Application.LoginPage.controller.LoginPage"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+	<Page showHeader="false">	
+		<SearchField liveChange="onSearch"/>
+			<Table visible="true" id="ID_DEMO" items="{ path:'/personData',factory:'.myFactory'}" class="sapUiTinyMargin">
+				<columns>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Comment" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Person Name" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="E-Mail" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Person Number" />
+					</Column>
+				</columns>
+			</Table>		
+	</Page>
+</mvc:View>
